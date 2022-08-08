@@ -19,7 +19,7 @@ formEl.addEventListener("submit", submiting);
 function submiting(event) {
   event.preventDefault();
   if (inputMailEl.value.trim() === "" || inputPasswordEl.value.trim() === "") {
-    alert('input something');
+    return alert('input something');
   } else {
     const inputedObj = {
       email: inputMailEl.value,
